@@ -1,0 +1,635 @@
+@import url('../css/fonts.css');
+
+body{
+	height: 4000px;
+}
+
+:root{
+
+	--p-color: #b3acac;
+	--main-color: #e85151;
+	--bg-color: #2b2929;
+}
+
+.overlay2{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,.7);
+	z-index: 998;
+}
+
+p, span{
+	font-family: Livvic
+}
+
+h2{
+	font-family: Josefin_Sans;
+	letter-spacing: 1px;
+}
+/************************** Header *****************************/
+
+/*************** Upper Nav **************/
+header{
+	position: relative;
+}
+
+header .side-bar{
+	position: absolute;
+	top: 0px;
+	width: 60%;
+	background: rgba(0,0,0,.8);
+	height: 100vh;
+	transform: translateX(-100%);
+	transition: all .5s ease-in-out;
+	padding-top: 130px;
+	z-index: 999;
+}
+
+header .side-bar.show{
+	transform: translateX(0%);
+}
+
+header .side-bar ul li a{
+	text-decoration: none;
+	color: #fff;
+	padding: 15px 20px;
+	display: inline-block;
+	transition: all .4s ease-in-out;
+	font-family: Abel;
+}
+
+header .side-bar ul li a:hover{
+	color: #3c9aff;	
+}
+
+header .social2{
+	padding: 3px 20px;
+}
+
+header .social2 a{
+	display: inline-block;
+	margin-right: 10px;
+	font-size: 22px;
+	color: #fff;
+	transition: all .4s ease-in-out;
+}
+
+header .social2 a:hover{
+	color: #3c9aff;
+}
+
+header .logo2 {
+	margin: 30px 0 0 15px;
+	font-family: Anton;
+}
+
+header .logo2 a{
+	text-decoration: none;
+	color: #ffd43b;
+}
+
+header .uppernav{
+	background: rgba(0,0,0,1);
+	color: #fff;
+}
+
+header .uppernav .social{
+	padding: 3px 0;
+}
+
+header .uppernav .social a{
+	display: inline-block;
+	margin-left: 5px;
+	font-size: 18px;
+	color: #fff;
+	transition: all .4s ease-in-out;
+}
+
+header .uppernav .social a:hover{
+	color: #3c9aff;
+}
+
+header .uppernav .telephone-numbers{
+	display: flex;
+	padding: 4px 0;
+	justify-content: flex-end;
+	font-family: Livvic;
+}
+
+header .uppernav .telephone-numbers .item{
+	margin-left: 15px;
+}
+
+header .uppernav .telephone-numbers .item i{
+	cursor: pointer;
+}
+
+header .uppernav .telephone-numbers .item span{
+	
+	font-size: 14px;
+	letter-spacing: 1px;
+}
+
+@media screen and (max-width: 767px) {
+	header .uppernav .telephone-numbers .item span{
+		display: none;
+	}
+}
+/*****xxx******* Upper Nav ******xxx*****/
+
+/*************** Main Nav **************/
+header .main-nav{
+	background: #fff;
+}
+
+header .main-nav .container{
+	position: relative;
+}
+
+header .main-nav .container .toggle-btn{
+	position: absolute;
+	top: 33px;
+	transform: translateY(-50%);
+	border: 1px solid #000;
+	padding: 0 3px;
+	z-index: 1;
+	right: 15px;
+	display: none;
+	cursor: pointer;
+}
+
+header .main-nav .container .toggle-btn i{
+	font-size: 30px;
+}
+
+header .main-nav .logo {
+	padding: 10px 0;
+	font-family: Anton;
+}
+
+header .main-nav .logo a{
+	text-decoration: none;
+	color: #ffd43b;
+}
+
+header .main-nav .main-list{
+	padding: 21px 0;
+	display: block;
+}
+
+header .main-nav .main-list ul{
+	display: flex;
+	margin: 0;
+	justify-content: flex-end;
+}
+
+header .main-nav .main-list ul li a{
+	text-decoration: none;
+	padding: 0 20px;
+	color: #000;
+	font-weight: 600;
+	transition: all .4s ease-in-out;
+}
+
+header .main-nav .main-list ul li a:hover{
+	color: #0b53a0;
+}
+
+header .main-nav .main-list ul li:last-child a{
+	text-decoration: none;
+	padding: 0  0  0 20px;
+}
+
+@media screen and (max-width: 767px) {
+	header .main-nav .container .toggle-btn{
+		display: block;
+	}
+	header .main-nav .main-list{
+		display: none;
+	}
+}
+/****xxx******** Main Nav ******xxx*****/
+
+/************************** Header *****************************/
+
+
+
+/************************** Main *****************************/
+
+/*************** Body Interface **************/
+
+main .body-interface{
+	background-image: url(../assets/bg.jpg);
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+
+main .body-interface .overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.5);
+	z-index: 1;
+}
+
+main .body-interface .content{
+	position: absolute;
+	top: 40%;
+	transform: translateY(-50%);
+	left: 10%;
+	color: #fff;
+	z-index: 2;
+}
+
+main .body-interface .content h6{
+	color: #ffd43b;
+    font-size: 13px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+main .body-interface .content h1{
+	font-family: Anton;
+	letter-spacing: 1px;
+	margin-bottom: 20px;
+}
+
+main .body-interface .content p{
+	color: var(--light)
+}
+
+main .body-interface .content button{
+	border: none;
+    padding: 10px 40px;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: #ffd43b;
+    border: 2px solid transparent;
+    transition: all .5s ease-in-out;
+}
+
+main .body-interface .content button:hover{
+	background-color: transparent;
+    border: 2px solid #ffd43b;
+    color: #ffd43b;
+}
+/****xxx******** Body Interface ******xxx*****/
+
+
+/*************** Sponserd **************/
+
+.sponserd{
+	padding: 30px 0;
+}
+
+/****xxx******** Sponserd ******xxx*****/
+
+
+/*************** Taste Discover **************/
+
+.taste-discover{
+	padding: 100px 0 70px;
+	background: var(--bg-color);
+}
+
+.taset-discover-left h6{
+	font-size: 14px;
+    margin-bottom: 15px;
+    color: var(--main-color);
+}
+
+.taset-discover-left h2{
+	color: #fff;
+    margin-bottom: 30px	
+}
+
+.taset-discover-left p{
+	color: var(--p-color);
+    font-size: 15px
+}
+
+.taset-discover-left .item{
+	display: flex;
+	color: #fff;
+	margin-bottom: 30px;
+}
+
+.taset-discover-left .item i{
+	font-size: 35px;
+    margin-right: 15px;
+    color: #fff;
+}
+
+.taset-discover-left .item span{
+	font-size: 14px;
+    color: var(--p-color)
+}
+
+.taset-discover-right{
+	background-image: url('../assets/1.jpg');
+	height: 400px;
+	background-position: center;
+	background-size: cover;
+}
+
+@media screen and (max-width: 767px) {
+	.taset-discover-right{
+		margin-top: 30px;
+	}
+}
+/****xxx******** Taste Discover ******xxx*****/
+
+
+/***************** Offered Menu **************/
+
+.offered-menu{
+	padding: 80px 0 10px;
+}
+
+.offered-menu h5{
+	margin-bottom: 25px;
+    font-size: 20px;
+    color: var(--main-color);
+    font-family: Abel;
+    font-weight: 600;
+    letter-spacing: 1px
+}
+
+.offered-menu h2{
+	font-weight: bold;
+    font-size: 45px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+}
+
+.offered-menu ul{
+	display: flex;
+	justify-content: center;
+}
+
+.offered-menu ul li {
+	padding: 8px 10px;
+    color: #484848;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    transition: all .4s ease-in-out;
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+.offered-menu ul li.active,
+.offered-menu ul li:hover{
+	background-color: var(--main-color);
+}
+
+.offered-pic{
+	position: relative;
+	width: 100%;
+	height: 500px;
+}
+
+.offered-pic .item{
+	display: flex;
+	flex-wrap: wrap;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transition: all 1s ease-in-out;
+}
+
+.offered-pic .item.active{
+	opacity: 1;
+}
+
+.offered-pic .item .left{
+	width: 40%;
+	height: 500px;
+	background-image: url('../assets/offered/special1.jpeg');
+	background-size: cover;
+	background-position: center;
+}
+
+.offered-pic .item .middle{
+	width: 35%;
+	height: 500px;
+	background-image: url('../assets/offered/special2.jpeg');
+	background-size: cover;
+	background-position: center;	
+}
+
+.offered-pic .item .right{
+	width: 25%;
+	height: 500px;
+	background-image: url('../assets/offered/special3.jpeg');
+	background-size: cover;
+	background-position: center;
+}
+
+.offered-pic .item .left1{
+	width: 40%;
+	height: 500px;
+	background-image: url('../assets/offered/lunch1.jpeg');
+	background-size: cover;
+	background-position: center;
+}
+
+.offered-pic .item .middle1{
+	width: 35%;
+	height: 500px;
+	background-image: url('../assets/offered/lunch2.jpeg');
+	background-size: cover;
+	background-position: center;	
+}
+
+.offered-pic .item .right1{
+	width: 25%;
+	height: 500px;
+	background-image: url('../assets/offered/lunch3.jpeg');
+	background-size: cover;
+	background-position: center;
+}
+
+.offered-pic .item .left2{
+	width: 40%;
+	height: 500px;
+	background-image: url('../assets/offered/breakfast1.jpeg');
+	background-size: cover;
+	background-position: center;
+}
+
+.offered-pic .item .middle2{
+	width: 35%;
+	height: 500px;
+	background-image: url('../assets/offered/breakfast2.jpeg');
+	background-size: cover;
+	background-position: center;	
+}
+
+.offered-pic .item .right2{
+	width: 25%;
+	height: 500px;
+	background-image: url('../assets/offered/breakfast3.jpeg');
+	background-size: cover;
+	background-position: center;
+}
+
+.offered-pic .item .left3{
+	width: 40%;
+	height: 500px;
+	background-image: url('../assets/offered/dinner1.jpeg');
+	background-size: cover;
+	background-position: center;
+}
+
+.offered-pic .item .middle3{
+	width: 35%;
+	height: 500px;
+	background-image: url('../assets/offered/dinner2.jpeg');
+	background-size: cover;
+	background-position: center;	
+}
+
+.offered-pic .item .right3{
+	width: 25%;
+	height: 500px;
+	background-image: url('../assets/offered/dinner3.jpeg');
+	background-size: cover;
+	background-position: center;
+}
+
+@media screen and (max-width: 767px) {
+	.offered-pic .item .left,.offered-pic .item .middle,
+	.offered-pic .item .left1,.offered-pic .item .middle1,
+	.offered-pic .item .left2,.offered-pic .item .middle2,
+	.offered-pic .item .left3,.offered-pic .item .middle3{
+		width: 50%;
+		height: 400px;
+	}
+
+	.offered-pic .item .right,
+	.offered-pic .item .right1,
+	.offered-pic .item .right2,
+	.offered-pic .item .right3{
+		width: 100%;
+	}
+	.offered-pic{
+		height: 1000px;
+	}
+}
+
+/*******xx******** Offered Menu ******xx******/
+
+/***************** About Us **************/
+
+.about-us{
+	padding: 100px 0;
+}
+
+.about-us .left-side{
+	background-image: url('../assets/about.jpeg');
+	background-size: cover;
+	background-position: center;
+	height: 500px;
+}
+
+.about-us .content{
+	padding:40px 0 0 30px;
+}
+
+.about-us .content h6{
+	font-size: 14px;
+    margin-bottom: 15px;
+    color: var(--main-color);
+}
+
+.about-us .content h2{
+	color: #fff;
+    margin-bottom: 30px;
+    color: #000;
+}
+
+.about-us .content p{
+	color: var(--p-color);
+    font-size: 15px
+}
+
+.about-us .content button{
+	border: none;
+    padding: 10px 40px;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: #ffd43b;
+    border: 2px solid transparent;
+    transition: all .5s ease-in-out;
+}
+
+.about-us .content button:hover{
+	background-color: transparent;
+    border: 2px solid #000;
+    color: #000;
+}
+/*******xx******** About Us ******xx******/
+
+/***************** Book Section **************/
+
+.book{
+	padding: 50px 0;
+	height: 400px;
+	background-image: url('../assets/book.jpeg');
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+
+.book .overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(255, 255, 255, .3);
+}
+
+.book h6{
+	font-size: 14px;
+    margin-bottom: 15px;
+    color: var(--main-color);
+    position: relative;
+    z-index: 1;
+}
+
+.book h2{
+	color: #fff;
+    margin-bottom: 30px;
+    color: #000;
+    position: relative;
+    z-index: 1;
+}
+
+/*******xx******** Book Section ******xx******/
+
+/***********xxxx*********** Main **************xxx***********/
+
+
+
+
+
+
+
+
+
+
+
+
+
